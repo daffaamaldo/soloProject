@@ -43,7 +43,7 @@ public class UserProductCartController {
 		return userProductCartService.getCartDtoByUpcId(cart);
 	}
 	
-	@PostMapping //("localhost:8092/api/solo_project/UserProductCart/path") kalau mau spesific
+	@PostMapping
 	public String regUserProductCart(@RequestBody UserProductCart req) {
 		
 		return userProductCartService.regUserProductCart(req);
